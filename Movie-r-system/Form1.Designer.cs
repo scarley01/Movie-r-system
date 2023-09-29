@@ -87,6 +87,7 @@
             this.rentsToolStripMenuItem.Name = "rentsToolStripMenuItem";
             this.rentsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.rentsToolStripMenuItem.Text = "Rents";
+            this.rentsToolStripMenuItem.Click += new System.EventHandler(this.rentsToolStripMenuItem_Click);
             // 
             // reportsToolStripMenuItem
             // 
