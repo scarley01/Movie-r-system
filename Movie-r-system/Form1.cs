@@ -30,5 +30,12 @@ namespace Movie_r_system
             rent_Movies.Show();
 
         }
+
+        private void usersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Users users = new Users();
+            users.Show();
+
+        }
     }
 }

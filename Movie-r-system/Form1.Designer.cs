@@ -31,14 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.searchByToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reportsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.moviesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.rentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.titleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.directorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.genreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportsToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.listOfUsersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listOfMoviesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.allAvailableMoviesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -68,27 +68,6 @@
             this.searchByToolStripMenuItem.Size = new System.Drawing.Size(88, 20);
             this.searchByToolStripMenuItem.Text = "Maintenance";
             // 
-            // reportsToolStripMenuItem
-            // 
-            this.reportsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.titleToolStripMenuItem,
-            this.directorToolStripMenuItem,
-            this.genreToolStripMenuItem});
-            this.reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
-            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
-            this.reportsToolStripMenuItem.Text = "Search by";
-            // 
-            // reportsToolStripMenuItem1
-            // 
-            this.reportsToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.listOfUsersToolStripMenuItem,
-            this.listOfMoviesToolStripMenuItem,
-            this.allAvailableMoviesToolStripMenuItem,
-            this.allRentedMoviesToolStripMenuItem});
-            this.reportsToolStripMenuItem1.Name = "reportsToolStripMenuItem1";
-            this.reportsToolStripMenuItem1.Size = new System.Drawing.Size(59, 20);
-            this.reportsToolStripMenuItem1.Text = "Reports";
-            // 
             // moviesToolStripMenuItem
             // 
             this.moviesToolStripMenuItem.Name = "moviesToolStripMenuItem";
@@ -101,6 +80,7 @@
             this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
             this.usersToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.usersToolStripMenuItem.Text = "Users";
+            this.usersToolStripMenuItem.Click += new System.EventHandler(this.usersToolStripMenuItem_Click);
             // 
             // rentsToolStripMenuItem
             // 
@@ -108,23 +88,44 @@
             this.rentsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.rentsToolStripMenuItem.Text = "Rents";
             // 
+            // reportsToolStripMenuItem
+            // 
+            this.reportsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.titleToolStripMenuItem,
+            this.directorToolStripMenuItem,
+            this.genreToolStripMenuItem});
+            this.reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
+            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(70, 20);
+            this.reportsToolStripMenuItem.Text = "Search by";
+            // 
             // titleToolStripMenuItem
             // 
             this.titleToolStripMenuItem.Name = "titleToolStripMenuItem";
-            this.titleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.titleToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.titleToolStripMenuItem.Text = "Title";
             // 
             // directorToolStripMenuItem
             // 
             this.directorToolStripMenuItem.Name = "directorToolStripMenuItem";
-            this.directorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.directorToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.directorToolStripMenuItem.Text = "Director";
             // 
             // genreToolStripMenuItem
             // 
             this.genreToolStripMenuItem.Name = "genreToolStripMenuItem";
-            this.genreToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.genreToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
             this.genreToolStripMenuItem.Text = "Genre";
+            // 
+            // reportsToolStripMenuItem1
+            // 
+            this.reportsToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.listOfUsersToolStripMenuItem,
+            this.listOfMoviesToolStripMenuItem,
+            this.allAvailableMoviesToolStripMenuItem,
+            this.allRentedMoviesToolStripMenuItem});
+            this.reportsToolStripMenuItem1.Name = "reportsToolStripMenuItem1";
+            this.reportsToolStripMenuItem1.Size = new System.Drawing.Size(59, 20);
+            this.reportsToolStripMenuItem1.Text = "Reports";
             // 
             // listOfUsersToolStripMenuItem
             // 
