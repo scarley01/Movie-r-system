@@ -71,21 +71,21 @@
             // moviesToolStripMenuItem
             // 
             this.moviesToolStripMenuItem.Name = "moviesToolStripMenuItem";
-            this.moviesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.moviesToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.moviesToolStripMenuItem.Text = "Movies";
             this.moviesToolStripMenuItem.Click += new System.EventHandler(this.moviesToolStripMenuItem_Click);
             // 
             // usersToolStripMenuItem
             // 
             this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
-            this.usersToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.usersToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.usersToolStripMenuItem.Text = "Users";
             this.usersToolStripMenuItem.Click += new System.EventHandler(this.usersToolStripMenuItem_Click);
             // 
             // rentsToolStripMenuItem
             // 
             this.rentsToolStripMenuItem.Name = "rentsToolStripMenuItem";
-            this.rentsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.rentsToolStripMenuItem.Size = new System.Drawing.Size(112, 22);
             this.rentsToolStripMenuItem.Text = "Rents";
             this.rentsToolStripMenuItem.Click += new System.EventHandler(this.rentsToolStripMenuItem_Click);
             // 
@@ -102,20 +102,23 @@
             // titleToolStripMenuItem
             // 
             this.titleToolStripMenuItem.Name = "titleToolStripMenuItem";
-            this.titleToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.titleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.titleToolStripMenuItem.Text = "Title";
+            this.titleToolStripMenuItem.Click += new System.EventHandler(this.titleToolStripMenuItem_Click);
             // 
             // directorToolStripMenuItem
             // 
             this.directorToolStripMenuItem.Name = "directorToolStripMenuItem";
-            this.directorToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.directorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.directorToolStripMenuItem.Text = "Director";
+            this.directorToolStripMenuItem.Click += new System.EventHandler(this.directorToolStripMenuItem_Click);
             // 
             // genreToolStripMenuItem
             // 
             this.genreToolStripMenuItem.Name = "genreToolStripMenuItem";
-            this.genreToolStripMenuItem.Size = new System.Drawing.Size(116, 22);
+            this.genreToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.genreToolStripMenuItem.Text = "Genre";
+            this.genreToolStripMenuItem.Click += new System.EventHandler(this.genreToolStripMenuItem_Click);
             // 
             // reportsToolStripMenuItem1
             // 
@@ -133,24 +136,28 @@
             this.listOfUsersToolStripMenuItem.Name = "listOfUsersToolStripMenuItem";
             this.listOfUsersToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.listOfUsersToolStripMenuItem.Text = "List of Users";
+            this.listOfUsersToolStripMenuItem.Click += new System.EventHandler(this.listOfUsersToolStripMenuItem_Click);
             // 
             // listOfMoviesToolStripMenuItem
             // 
             this.listOfMoviesToolStripMenuItem.Name = "listOfMoviesToolStripMenuItem";
             this.listOfMoviesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.listOfMoviesToolStripMenuItem.Text = "List of Movies";
+            this.listOfMoviesToolStripMenuItem.Click += new System.EventHandler(this.listOfMoviesToolStripMenuItem_Click);
             // 
             // allAvailableMoviesToolStripMenuItem
             // 
             this.allAvailableMoviesToolStripMenuItem.Name = "allAvailableMoviesToolStripMenuItem";
             this.allAvailableMoviesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.allAvailableMoviesToolStripMenuItem.Text = "All Available Movies";
+            this.allAvailableMoviesToolStripMenuItem.Click += new System.EventHandler(this.allAvailableMoviesToolStripMenuItem_Click);
             // 
             // allRentedMoviesToolStripMenuItem
             // 
             this.allRentedMoviesToolStripMenuItem.Name = "allRentedMoviesToolStripMenuItem";
             this.allRentedMoviesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.allRentedMoviesToolStripMenuItem.Text = "All Rented Movies";
+            this.allRentedMoviesToolStripMenuItem.Click += new System.EventHandler(this.allRentedMoviesToolStripMenuItem_Click);
             // 
             // Form1
             // 

@@ -183,11 +183,35 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AvailableMovies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AvailableMovies.Designer.cs">
+      <DependentUpon>AvailableMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Directorsearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Directorsearch.Designer.cs">
+      <DependentUpon>Directorsearch.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenreSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenreSearch.Designer.cs">
+      <DependentUpon>GenreSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NotAvailableMovies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NotAvailableMovies.Designer.cs">
+      <DependentUpon>NotAvailableMovies.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -203,14 +227,44 @@
     <Compile Include="Rents.Designer.cs">
       <DependentUpon>Rents.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReportMovies.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportMovies.Designer.cs">
+      <DependentUpon>ReportMovies.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportUsers.Designer.cs">
+      <DependentUpon>ReportUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="titlesearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="titlesearch.Designer.cs">
+      <DependentUpon>titlesearch.cs</DependentUpon>
+    </Compile>
     <Compile Include="Users.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Users.Designer.cs">
       <DependentUpon>Users.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AvailableMovies.resx">
+      <DependentUpon>AvailableMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Directorsearch.resx">
+      <DependentUpon>Directorsearch.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenreSearch.resx">
+      <DependentUpon>GenreSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NotAvailableMovies.resx">
+      <DependentUpon>NotAvailableMovies.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -226,6 +280,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Rents.resx">
       <DependentUpon>Rents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportMovies.resx">
+      <DependentUpon>ReportMovies.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportUsers.resx">
+      <DependentUpon>ReportUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="titlesearch.resx">
+      <DependentUpon>titlesearch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Users.resx">
       <DependentUpon>Users.cs</DependentUpon>

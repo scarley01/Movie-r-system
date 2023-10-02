@@ -36,16 +36,16 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.avaliable = new System.Windows.Forms.GroupBox();
+            this.movie = new System.Windows.Forms.ComboBox();
+            this.user = new System.Windows.Forms.ComboBox();
+            this.price = new System.Windows.Forms.NumericUpDown();
+            this.returndate = new System.Windows.Forms.DateTimePicker();
+            this.rentdate = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.rentdate = new System.Windows.Forms.DateTimePicker();
-            this.returndate = new System.Windows.Forms.DateTimePicker();
-            this.price = new System.Windows.Forms.NumericUpDown();
-            this.user = new System.Windows.Forms.ComboBox();
-            this.movie = new System.Windows.Forms.ComboBox();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.ffff.SuspendLayout();
@@ -82,8 +82,8 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(526, 288);
             this.dataGridView1.TabIndex = 0;
-      
-            this.dataGridView1.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_RowEnter);
+            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_RowEnter);
+            
             // 
             // ffff
             // 
@@ -151,6 +151,55 @@
             this.avaliable.TabStop = false;
             this.avaliable.Text = "Rent Information";
             // 
+            // movie
+            // 
+            this.movie.FormattingEnabled = true;
+            this.movie.Location = new System.Drawing.Point(110, 125);
+            this.movie.Name = "movie";
+            this.movie.Size = new System.Drawing.Size(135, 21);
+            this.movie.TabIndex = 31;
+            // 
+            // user
+            // 
+            this.user.FormattingEnabled = true;
+            this.user.Location = new System.Drawing.Point(110, 98);
+            this.user.Name = "user";
+            this.user.Size = new System.Drawing.Size(135, 21);
+            this.user.TabIndex = 30;
+            // 
+            // price
+            // 
+            this.price.Location = new System.Drawing.Point(110, 72);
+            this.price.Name = "price";
+            this.price.Size = new System.Drawing.Size(135, 20);
+            this.price.TabIndex = 29;
+            // 
+            // returndate
+            // 
+            this.returndate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.returndate.Location = new System.Drawing.Point(110, 45);
+            this.returndate.Name = "returndate";
+            this.returndate.Size = new System.Drawing.Size(135, 20);
+            this.returndate.TabIndex = 28;
+            // 
+            // rentdate
+            // 
+            this.rentdate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.rentdate.Location = new System.Drawing.Point(110, 19);
+            this.rentdate.Name = "rentdate";
+            this.rentdate.Size = new System.Drawing.Size(135, 20);
+            this.rentdate.TabIndex = 27;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(11, 45);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(88, 15);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "Return Date:";
+            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -190,55 +239,6 @@
             this.label8.Size = new System.Drawing.Size(75, 15);
             this.label8.TabIndex = 16;
             this.label8.Text = "Rent Date:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(11, 45);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 15);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "Return Date:";
-            // 
-            // rentdate
-            // 
-            this.rentdate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.rentdate.Location = new System.Drawing.Point(110, 19);
-            this.rentdate.Name = "rentdate";
-            this.rentdate.Size = new System.Drawing.Size(135, 20);
-            this.rentdate.TabIndex = 27;
-            // 
-            // returndate
-            // 
-            this.returndate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.returndate.Location = new System.Drawing.Point(110, 45);
-            this.returndate.Name = "returndate";
-            this.returndate.Size = new System.Drawing.Size(135, 20);
-            this.returndate.TabIndex = 28;
-            // 
-            // price
-            // 
-            this.price.Location = new System.Drawing.Point(110, 72);
-            this.price.Name = "price";
-            this.price.Size = new System.Drawing.Size(135, 20);
-            this.price.TabIndex = 29;
-            // 
-            // user
-            // 
-            this.user.FormattingEnabled = true;
-            this.user.Location = new System.Drawing.Point(110, 98);
-            this.user.Name = "user";
-            this.user.Size = new System.Drawing.Size(135, 21);
-            this.user.TabIndex = 30;
-            // 
-            // movie
-            // 
-            this.movie.FormattingEnabled = true;
-            this.movie.Location = new System.Drawing.Point(110, 125);
-            this.movie.Name = "movie";
-            this.movie.Size = new System.Drawing.Size(135, 21);
-            this.movie.TabIndex = 31;
             // 
             // Rents
             // 

@@ -42,11 +42,7 @@ namespace Movie_r_system
             {
                 con.Open();
                 reader = cmd.ExecuteReader();
-                //while (reader.Read())
-                //{
-                //    string title = reader.GetString(0);
-                //    movie.Items.Add(title);
-                //}
+              
                 var table = new DataTable();
                 table.Load(reader);
                 movie.DataSource = table;
@@ -65,11 +61,7 @@ namespace Movie_r_system
             {
                 con2.Open();
                 reader2 = cmd2.ExecuteReader();
-                //while (reader2.Read())
-                //{
-                //    string name = reader2.GetString(0);
-                //    user.Items.Add(name);
-                //}
+               
                 var table = new DataTable();
                 table.Load(reader2);
                 user.DataSource = table;
@@ -82,11 +74,11 @@ namespace Movie_r_system
             }
 
 
+         
         }
         private void dataGridView1_RowEnter(object sender, DataGridViewCellEventArgs e)
         {
-           
-            rowID = (int)dataGridView1.Rows[e.RowIndex].Cells[0].Value;
+            rowID = Convert.ToInt16(dataGridView1.Rows[e.RowIndex].Cells[0].Value);
 
             DataGridViewRow row = this.dataGridView1.Rows[e.RowIndex];
 
@@ -95,7 +87,6 @@ namespace Movie_r_system
             price.Text = row.Cells[3].Value.ToString();
             user.Text = row.Cells[4].Value.ToString();
             movie.Text = row.Cells[5].Value.ToString();
-
 
         }
         private DataTable GetData()
@@ -107,7 +98,7 @@ namespace Movie_r_system
             {
                 using (connection)
                 {
-                    string mySelectQuery = "SELECT Rented.Rent_date,Rented.Return_date, Rented.Price , Name, Title FROM Rented " +
+                    string mySelectQuery = "SELECT Rental_id, Rented.Rent_date,Rented.Return_date, Rented.Price , Name, Title FROM Rented " +
                         "INNER JOIN Users ON Rented.User_id = Users.User_id " +
                         "INNER JOIN Movie ON Rented.Movie_id = Movie.Movie_id";
                     var cmd = new SqlCommand(mySelectQuery, connection);

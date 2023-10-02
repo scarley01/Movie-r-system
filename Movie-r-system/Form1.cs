@@ -44,5 +44,48 @@ namespace Movie_r_system
             Rents rents = new Rents();
             rents.Show();
         }
+
+        private void titleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            titlesearch titlesearch = new titlesearch();
+            titlesearch.Show();
+        }
+
+        private void directorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Directorsearch directorsearch = new Directorsearch();
+            directorsearch.Show();
+        }
+
+        private void genreToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            GenreSearch genreSearch = new GenreSearch();    
+            genreSearch.Show();
+
+        }
+
+        private void listOfUsersToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReportUsers reportUsers = new ReportUsers();
+            reportUsers.Show();
+        }
+
+        private void listOfMoviesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReportMovies reportMovies = new ReportMovies();
+            reportMovies.Show();
+        }
+
+        private void allAvailableMoviesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           AvailableMovies availableMovies = new AvailableMovies();
+            availableMovies.Show();
+        }
+
+        private void allRentedMoviesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            NotAvailableMovies notAvailableMovies = new NotAvailableMovies();
+            notAvailableMovies.Show();
+        }
     }
 }
